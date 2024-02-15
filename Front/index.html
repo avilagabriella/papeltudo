@@ -6,46 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./papelaria2-removebg-preview.png" type="image/x-icon">
-    <title>Pape</title>
+    <title>Papelaria</title>
 </head>
 
 <body onload="loadClientes()">
     <header>
-        
-        <img src="./Captura de tela 2024-02-15 083901.png" >
+            <div>
+                <img src="./Captura de tela 2024-02-15 083901.png" >
+            </div>
         <nav>
-            <div class="cada" id="cadastrar">
-            <h2>Inventário - Papelaria PapelTudo</h2>
-            <input type="text" name="id" placeholder="ID:" required>
-                <input type="text" name="nome" placeholder="Nome:" required>
-                <input type="text" name="descricao" placeholder="Descrição:" required>
-                <input type="number" name="valor" placeholder="Valor:" required>
-                <input type="text" name="acao" placeholder="Ação" required>
-                <button  type="submit">cadastrar</button>
-                <button  type="reset">limpar</button>
-             </div>
-        </div>
-         
+            <form class="formi">
+                <div>
+                    <label for="id">Id:</label>
+                        <input type="text" name="id" id="id">
+                </div>
+                
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="desc">Descrição:</label>
+                        <input type="text" name="dec" id="desc">
+                </div>
+
+                <div>
+                    <label for="valor">Valor:</label>
+                    <input type="text" name="valor" id="valor">
+                </div>
+
+                <div>
+                    <label for="act">Ação:</label>
+                    <input type="submit" value="Cadastrar" name="act" id="act">
+
+                </div>
+            </form>
+        </div>  
     </header>
+    <main>
         <div class="AB">
-            <table>
+            <table id="table">
                 <thead>
                     <tr>
-                        <th>id</th>
+                        <th>Id</th>
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
-                <tbody id="dados">
+
+                <tbody>
                 </tbody>
             </table>
-        </div>
-    
-    <main>
-      
+         </div>
     </main>
+    <footer>
+        <div class="cd">
+            <div id="stats" class="stats">
+                <div>
+                    <label for="sys">Mensagens do sistema:</label>
+                    <input type="text" name="sys" id="sysmsg" readonly>
+                </div>
+    
+                <div>
+                    <label for="total">Total:</label>
+                    <input type="text" name="total" id="total" value="R$ 0,00" readonly>
+                </div>
+            </div>
+    </div>
+        </footer>
+        </body>
+        <script src="script.js"></script>
+        </html>
+       
+    
+   
+      
+
   
     
            
