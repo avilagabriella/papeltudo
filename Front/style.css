@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f1e8;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    margin-top: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    /* background: #000; */
+    color: #fff;
+
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer {
+    width: 100%;
+    height: 10vh;
+    padding: 20px 0;
+    background: #000;
+    text-align: center;
+    color: #fff;
+} */
+
+nav {
+    height: 5vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a,
+button {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+nav button{
+    background: #f8f1e8;
+    color: #EEB4B4;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+table {
+    max-width: 800px;
+    display: block;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+thead {
+    width: 100%;
+    display: block;
+    background: #EEB4B4;
+    color: #fff;
+     font-weight: bold; 
+}
+
+thead tr {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+tbody {
+    max-height: 70vh;
+    display: block;
+    overflow-y: scroll;
+}
+
+tr:nth-child(even) {
+    background: #dddddd;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 200px;
+    padding: 15px;
+    margin: 5px 0;
+    border: 4px solid #fff;
+    border-radius: 20px;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15vh;
+    z-index: 10;
+}
+
+.oculto {
+    display: none;
+}
+h2 {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    color: #000;
+    text-align: center;
+    padding: 50px;
+}
+.AB {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 100px;
+}
