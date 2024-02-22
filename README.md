@@ -11,10 +11,12 @@ Projeto Full Stack, papelaria feita com estrutura MVC, um sistema para registrar
   5 Abra o terminal CMD 
   5.1 Naveque até a pasta ./API e instale as dependências
 
-  ``
-  cd back
+  `
+ cd back
     npm i
-  ``
+
+  `
+
   * 6 Inicie o Back-End
   ``
   node server.js
