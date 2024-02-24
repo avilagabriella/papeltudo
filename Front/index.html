@@ -1,109 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria PapelTudo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./papelaria2-removebg-preview.png" type="image/x-icon">
-    <title>Papelaria</title>
 </head>
 
-<body onload="loadClientes()">
+<body>
+
     <header>
-            <div>
-                <img src="./Captura de tela 2024-02-15 083901.png" >
-            </div>
-        <nav>
-            <form class="formi">
-                <div>
+
+        <section class="container1">
+
+            <h1>Inventário - Papelaria PapelTudo</h1>
+
+            <form id="form1">
+
+                <div class="container">
                     <label for="id">Id:</label>
-                        <input type="text" name="id" id="id">
+                    <input type="text" id="id" name="id">
                 </div>
-                
-                <div>
+                <div class="container">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="container">
+                    <label for="Descrição">Descrição:</label>
+                    <input type="text" id="Descrição" name="Descrição">
+                </div>
+                <div class="container">
+                    <label for="Valor">Valor:</label>
+                    <input type="number" id="Valor" name="Valor" step="0.01" required>
+                </div>
+                <div class="container">
+                    <label for="Ação">Ação:</label>
+                    <button type="submit">Cadastrar</button>
                 </div>
 
-                <div>
-                    <label for="desc">Descrição:</label>
-                        <input type="text" name="dec" id="desc">
-                </div>
-
-                <div>
-                    <label for="valor">Valor:</label>
-                    <input type="text" name="valor" id="valor">
-                </div>
-
-                <div>
-                    <label for="act">Ação:</label>
-                    <input type="submit" value="Cadastrar" name="act" id="act">
-
-                </div>
             </form>
-        </div>  
+
+        </section>
+
     </header>
+
+
     <main>
-        <div class="AB">
-            <table id="table">
+
+        <section class="container2">
+
+            <table>
+
                 <thead>
+
                     <tr>
+
                         <th>Id</th>
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Ação</th>
+
                     </tr>
+
                 </thead>
 
-                <tbody>
-                </tbody>
-            </table>
-         </div>
-    </main>
-    <footer>
-        <div class="cd">
-            <div id="stats" class="stats">
-                <div>
-                    <label for="sys">Mensagens do sistema:</label>
-                    <input type="text" name="sys" id="sysmsg" readonly>
-                </div>
-    
-                <div>
-                    <label for="total">Total:</label>
-                    <input type="text" name="total" id="total" value="R$ 0,00" readonly>
-                </div>
-            </div>
-    </div>
-        </footer>
-        </body>
-        <script src="script.js"></script>
-        </html>
-       
-    
-   
-      
+                <tbody id="item-list">
 
-  
-    
-           
-           
-               
-    
-    <div class="modal oculto" id="msgs">
-        <div class="janela">
-            <h2 id="errTit"></h2>
-            <br>
-            <h3 id="msg"> </h3>
-            <br>
-            <div>
-                <button onclick="window.location.href='./'">Fechar</button>
-                <button id="confirma" class="oculto">Confirma</button>
-            </div>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <div class="mensagem">
+
+            <label for="Mensagem">Mensagem do Sistema:</label>
+
+            <input type="text" id="Mensagem" name="Mensagem" required>
+
+            <p>Patrimônio Total: <span id="Total"> R$ 0.00</span></p>
+
         </div>
-    </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
 
 </html>

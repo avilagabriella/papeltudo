@@ -1,155 +1,196 @@
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
+    font-family: "Courier Prime", monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f8f1e8;
-    overflow: hidden;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+header h1 {
+    background: #f38f00;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
+    box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    top:0;
+left:0;
 }
 
 header {
-    width: 100%;
-    height: 10vh;
     display: flex;
-    margin-top: 150px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    /* background: #000; */
-    color: #fff;
-
-}
-
-main {
-    width: 100%;
-    height: 80vh;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    border: 2px solid #f38f00;
+    border-radius: 10px;
+    width: 100vw;
+    height: 190px;
 }
 
-/* footer {
-    width: 100%;
-    height: 10vh;
-    padding: 20px 0;
-    background: #000;
-    text-align: center;
-    color: #fff;
-} */
-
-nav {
-    height: 5vh;
-    padding: 10px;
+form {
     display: flex;
-    justify-content: space-around;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
+    box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
+}
+
+.form1 {
+    background-color: #ffffff;
+    border: 2px solid #f38f00;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    display: grid;
+}
+
+input {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 5px;
+    outline: none;
 }
 
-a,
-button {
-    text-decoration: none;
-    color: #fff;
-    background: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.2s;
-    cursor: pointer;
+input[type="number"] {
+    border-radius: 10px;
+    border: 2px solid #f38f00;
+    padding: 5px;
+    outline: none;
 }
 
-nav button{
-    background: #f8f1e8;
-    color: #EEB4B4;
+input[type="text"] {
+    font-family: "Courier Prime", monospace;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid #f38f00;
+    padding: 5px;
 }
 
-table {
-    max-width: 800px;
-    display: block;
-    border-collapse: collapse;
-    overflow-y: auto;
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #f38f00;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease all;
+    margin-top: 6px;
+    margin: 6px;
 }
 
-thead {
-    width: 100%;
-    display: block;
-    background: #EEB4B4;
-    color: #fff;
-     font-weight: bold; 
+button[type="submit"]:hover {
+    background-color: #fa9b00;
 }
 
-thead tr {
+main .container2 {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 50px;
     display: flex;
     justify-content: space-around;
-
+    flex-direction: column;
+    border: 2px solid #f38f00;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
+    box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
 }
 
-tbody {
-    max-height: 70vh;
-    display: block;
-    overflow-y: scroll;
+table th,
+table td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-tr:nth-child(even) {
-    background: #dddddd;
+table th {
+    background-color: #f9f9f9;
 }
 
-tr {
-    border-bottom: 1px solid #ccc;
-}
-
-th,
-td {
-    padding: 10px 20px;
-    text-align: left;
-}
-
-input,
-textarea {
-    width: 200px;
-    padding: 15px;
-    margin: 5px 0;
-    border: 4px solid #fff;
-    border-radius: 20px;
-}
-
-.modal{
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    position:absolute;
-    top: 0;
-    left: 0;
+.mensagem {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 15vh;
-    z-index: 10;
+    height: 8vh;
+    color: #000;
+    font-family: "Courier Prime", monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .2rem;
+    background: #f38f00;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
+    box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
+    transform: skewX(-1deg);
+    border: 2px solid #f38f00;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-.oculto {
-    display: none;
+.mensagem .Mensagem {
+    border-radius: 10px;
+    border: 2px solid #f38f00;
+    line-height:25px;
 }
-h2 {
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
+ 
+.mensagem p span {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: bold;
+    line-height:25px;
+    transition: all .3s ease;
+    border: 2px solid #f38f00;
+    background-color: #f9f9f9;
+    color: #7f0000;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 18px;
     color: #000;
     text-align: center;
-    padding: 50px;
 }
-.AB {
-    display: flex;
-    margin-top: 80px;
-    margin-left: 100px;
+
+.btn-edit {
+    border-radius: 10px;
+    background: #f38f00;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: #f9f9f9;
+}
+
+.btn-delete {
+    border-radius: 10px;
+    background: #f38f00;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: #f9f9f9;
 }
