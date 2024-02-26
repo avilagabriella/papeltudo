@@ -13,7 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    width: 100vw;
+    width: 1750px;
     background-color: #ffffff;
 }
 
@@ -24,7 +24,7 @@ header h1 {
     box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
     color: #000;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -33,8 +33,7 @@ header h1 {
     background-color: #ffffff;
     border-radius: 10px;
     width: 100%;
-    top:0;
-left:0;
+   
 }
 
 header {
@@ -46,10 +45,13 @@ header {
     border-radius: 10px;
     width: 100vw;
     height: 190px;
+    
+    
 }
 
 form {
     display: flex;
+    gap: 50px;
     background: linear-gradient(to right, #ffffff, #ffffff);
     box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
     box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
@@ -62,6 +64,7 @@ form {
     font-size: 18px;
     margin-top: 20px;
     display: grid;
+   
 }
 
 input {
@@ -115,6 +118,7 @@ main .container2 {
     flex-direction: column;
     border: 2px solid #f38f00;
     border-radius: 10px;
+    height: 60vh;
     background: linear-gradient(to right, #ffffff, #ffffff);
     box-shadow: inset -70px 0 0 #ffffff, inset 70px 0 0 #ffffff;
     box-shadow: inset 70px 0 0 #ffffff, inset -70px 0 0 #ffffff;
@@ -129,11 +133,12 @@ table td {
 }
 
 table th {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 .mensagem {
     display: flex;
+    gap: 350px;
     align-items: center;
     justify-content: center;
     height: 8vh;
@@ -161,7 +166,7 @@ table th {
 .mensagem p span {
     border-radius: 10px;
     display: inline-block;
-    padding: 0 40px;
+    padding: 5px 10px;
     font-weight: bold;
     line-height:25px;
     transition: all .3s ease;
